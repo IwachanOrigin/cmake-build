@@ -1,0 +1,20 @@
+
+* cmake-build
+
+** Introduction
+
+
+** Dependency
+- CMake
+- ninja
+- clang
+- clang++
+
+** Install
+#+begin_src emacs-lisp
+
+#+end_src
+
+** How to use
+
+** custom value
