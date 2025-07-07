@@ -2,19 +2,32 @@
 * cmake-build
 
 ** Introduction
-
+This is a helper tool for executing CMake commands from Emacs to perform builds.  
 
 ** Dependency
-- CMake
-- ninja
-- clang
-- clang++
+- CMake  
+- ninja  
+- clang  
+- clang++  
 
 ** Install
 #+begin_src emacs-lisp
-
+  (use-package cmake-build
+    :vc (:fetcher github :repo IwachanOrigin/cmake-build))
 #+end_src
 
 ** How to use
+1) Open a C++ implementation file or header file.  
+2) M-x cmake-configure RET  
+   Temporary build artifacts will be generated in the build folder.  
+3) M-x cmake-build-debug or cmake-build-release RET  
+   The build is executed, and an executable file is generated.  
 
 ** custom value
+
+| custom value          | default value                    | description                                            |
+|-----------------------+----------------------------------+--------------------------------------------------------|
+| cmake-build-directory | build                            | The name of the build directory specified by cmake -B. |
+| cmake-build-generator | Ninja Multi-Config               | Generator specified by cmake -G.                       |
+| cmake-build-qt-dir    | C:/software/Qt/6.8.3/msvc2022_64 | Qt installation path specified by cmake -D QTDIR       |
+
