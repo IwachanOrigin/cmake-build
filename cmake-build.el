@@ -1,4 +1,4 @@
-;;; cmake-build.el --- “最上位 CMakeLists.txt” 上で固定 cmake を実行 -*- lexical-binding: t; -*-
+;;; cmake-build.el --- A tool that executes the CMake command in the top-level directory where the CMakeLists.txt file exists. -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2025 Yuji Iwanaga
 
@@ -23,6 +23,7 @@
 
 ;; PRE-CONDITION
 ;;   CMake, ninja, clang and clang++ must be registered in the PATH.
+;; A tool that executes the CMake command in the top-level directory where the CMakeLists.txt file exists.
 
 ;;; Code
 
