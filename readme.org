@@ -1,29 +1,32 @@
+#+title: cmake-build
+# -*- mode: org; coding: utf-8-unix; indent-tabs-mode: nil -*-
+#+options: auto-id:t H:6
 
-* cmake-build
-
-** Introduction
+* Introduction
 This is a helper tool for executing CMake commands from Emacs to perform builds.
 
-** Dependency
+* Dependency
 - CMake
 - ninja
 - clang
 - clang++
 
-** Install
+* Install
 #+begin_src emacs-lisp
   (use-package cmake-build
     :vc (:fetcher github :repo IwachanOrigin/cmake-build))
 #+end_src
 
-** How to use
+* How to use
 1) Open a C++ implementation file or header file.
 2) M-x ~cmake-configure~ RET.
+
    Temporary build artifacts will be generated in the build folder.
 3) M-x ~cmake-build-debug~ or ~cmake-build-release~ RET.
+
    The build is executed, and an executable file is generated.
 
-** custom value
+* custom value
 
 | custom value          | default value                    | description                                            |
 |-----------------------+----------------------------------+--------------------------------------------------------|
