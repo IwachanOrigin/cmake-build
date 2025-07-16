@@ -1,6 +1,5 @@
 #+title: cmake-build
 # -*- mode: org; coding: utf-8-unix; indent-tabs-mode: nil -*-
-#+options: auto-id:t H:6
 
 * Introduction
 This is a helper tool for executing CMake commands from Emacs to perform builds.
