@@ -20,10 +20,10 @@ This is a helper tool for executing CMake commands from Emacs to perform builds.
 * How to use
 1) Open a C++ implementation file or header file.
 2) M-x ~cmake-configure~ RET. 
-
+ 
    Temporary build artifacts will be generated in the build folder.
 3) M-x ~cmake-build-debug~ or ~cmake-build-release~ RET. 
-
+ 
    The build is executed, and an executable file is generated.
 
 * custom value
